@@ -1,6 +1,6 @@
 import React from 'react'
 import { Main_CONTENT } from '.'
-import profilePic from '/src/assets/RJJ.png';
+import profilePic from '../assets/RJJ.png';
 import {motion} from 'framer-motion'
 
 

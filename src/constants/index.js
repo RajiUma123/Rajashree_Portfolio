@@ -1,7 +1,7 @@
-import project1 from "../assets/projects/project-1.jpg";
-import project2 from "../assets/projects/project-2.jpg";
-import project3 from "../assets/projects/project-3.jpg";
-import project5 from "../assets/projects/project5.jpg";
+import project1 from "../assets/project-1.jpg";
+import project2 from "../assets/project-2.jpg";
+import project3 from "../assets/project-3.jpg";
+import project5 from "../assets/project-5.jpg";
 
 export const Main_CONTENT = `I am a passionate full stack developer with 2 years of hands-on experience in the MERN stack. I specialize in crafting robust and scalable web applications, leveraging technologies like React.js, Node.js, Express.js, and MongoDB to deliver exceptional user experiences and drive business growth. I also optimized application performance, improved UI responsiveness using advanced Tailwind CSS techniques.I worked as a frontend developer. I actively participated in thorough code reviews, enhancing the quality of our code, and implementing strong unit testing practices.`;
 
