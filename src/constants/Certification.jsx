@@ -29,7 +29,7 @@ const Certification = () => {
           AWS Certified Solutions Architect – Associate
         </h2>
         <a
-          href="/Rajashree_Portfolio/public/assets/projects/AWS Certified Solutions Architect - Associate certificate.pdf"
+          href="/Rajashree_Portfolio/AWS Certified Solutions Architect - Associate certificate.pdf"
           target="_blank"
           rel="noopener noreferrer"
           className="inline-block mt-4 px-6 py-2 bg-purple-600 text-black text-sm font-medium rounded-lg 
