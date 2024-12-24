@@ -6,6 +6,8 @@ import Experience from './constants/Experience'
 import Projects from './constants/projects'
 import Navbarnew from './constants/Navbarnew'
 import Contact from './constants/contact'
+import Education from './constants/Education'
+import Certification from './constants/Certification'
 const App = () => {
   return (
     <div className='overflow-x-hidden text-neutral-300 antialised selection:bg-cyan-300 selection:text-cyan-900'>
@@ -16,10 +18,13 @@ const App = () => {
        <div className='container mx-auto px-8'>
         <Navbarnew/>
        <Mainsection/>
+       <Education/>
        <Technologies/>
        <Experience/>
        <Projects/>
+       <Certification/>
        <Contact/>
+       
        </div>
        </div>
   )

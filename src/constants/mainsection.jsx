@@ -8,7 +8,7 @@ const container = (delay)=>({
    hidden: {x: -100, opacity: 0},
     visible:{ x: 0,
    opacity: 1,
-   transition: {duration:0.5 , delay: delay
+   transition: {duration:0.8 , delay: delay
    }
    },
 })
@@ -21,7 +21,7 @@ function mainsection() {
        
             <div className='w-full lg:w-1/2'>
            
-            <div className='flex flex-col items-center lg:items-start mt-10'>
+            <div className='flex flex-col items-center lg:items-start mt-10 ml-9'>
                 <motion.h1 
                 variants={container(0)} 
                 initial='hidden'
@@ -40,9 +40,12 @@ function mainsection() {
               </motion.p>
               <motion.button variants={container(1)} 
                 initial='hidden'
-                animate ='visible' className='btnresume'><a href="https://drive.google.com/file/d/1kh7z_FI9GET37teD5y-Y6po754elWr4T/view">My RESUME</a></motion.button>
-             
-
+                animate ='visible' 
+                whileHover={{ scale: 1.1 }} // Zoom in effect on hover
+                whileTap={{ scale: 0.95 }} // Zoom out effect on click
+                transition={{ duration: 0.3 }} // Smooth transition for scaling
+               className='btnresume bg-purple-1000 hover:bg-purple-600 text-white py-2 px-4 rounded flex items-center justify-center space-x-2'>
+                <a href="/Rajashree_Portfolio/Rajashree-NairResume.pdf">SEE MY RESUME</a></motion.button>
             </div>
           </div>
           <div className='w-full lg:w-1/2 lg:p-8'>
@@ -51,7 +54,8 @@ function mainsection() {
             initial={{x: 100 ,opacity: 0}}
             animate = {{x: 0,opacity: 1}}
             transition={{duration: 1, delay: 1.2}}
-            className= "lg:w-1/2 m-15 w-400"src={profilePic} alt="Rajashree Nair" />
+            
+            className= "lg:w-1/2 m-15 w-400 ml-10"src={profilePic} alt="Rajashree Nair" />
 
           </div>
 

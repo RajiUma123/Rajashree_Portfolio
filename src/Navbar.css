@@ -1,82 +1,110 @@
-/* src/components/Navbar.css */
-
-
-/* src/Navbar.css */
-
-.navbar {
-  background-color: cyan 300;
-  padding: 10px 20px;
-  top: 0;
-  width: 100%;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+/* Basic Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
+
+/* Navbar Styling */
+.navbar {
+  padding: 10px 30px;
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;  /* Align items to the left */
+  align-items: center;  /* Ensures vertical centering */
+  position: relative;
+  z-index: 100;  /* To make sure it's on top */
+}
+
+/* List styling to align text to the left */
+.navbar-list {
+  list-style: none;
+  display: flex;
+  justify-content: center;  /* Align items to the left */
+  margin-top: 10px;
+  margin-left: 0;  /* Remove any left margin */
+}
+
+.navbar-item {
+  position: relative;  /* For positioning the circle */
+  margin: 0 20px;  /* Spacing between items */
+}
+
+/* Basic link styling */
+.navbar-link {
+  text-decoration: none;
+  font-size: 1.1rem;
+  font-weight: 500;
+  color: white;
+  position: relative;
+  transition: color 0.3s ease;
+  padding: 0.5rem 1rem; /* Padding for the links */
+  z-index: 1;
+}
+
+/* Hover effect: Circle appearance */
+.navbar-link:hover {
+  color: white;  /* Text stays visible */
+}
+
+/* The circle behind the text */
+.navbar-link::before {
+  content: '';  /* Adds the circle */
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;  /* Size of the circle */
+  height: 100%;
+  border-radius: 50%;
+  background-color: rgba(123, 23, 195, 0.904);  /* Light purple circle */
+  z-index: -1;  /* Ensures the circle stays behind the text */
+  opacity: 0;
+  transition: opacity 0.3s ease, transform 0.3s ease;  /* Smooth opacity and scaling transition */
+}
+
+/* Make the circle appear and scale slightly on hover */
+.navbar-link:hover::before {
+  opacity: 1;
+  transform: translate(-50%, -50%) scale(1.05);  /* Slight scale on hover */
+}
+
+/* Change the text content on hover */
+.navbar-item:hover .navbar-link {
+  color: transparent; /* Text disappears */
+}
+
+.navbar-item:hover .navbar-link:after {
+  content: attr(data-hover); /* Show the new text */
+  color: white;
+  font-weight: 500;
+  transition: content 0.3s ease, color 0.3s ease;
+}
+
+/* Icons Styling */
 .navbar-icons {
   display: flex;
   gap: 20px; /* Space between icons */
   color: white;
   font-size: 30px;
+  justify-content: center;  /* Center icons */
+  align-items: center;  
+ margin-top: 10px;
 }
 
-
-
-
-
-.navbar-link {
-  text-decoration: none;
-  color: white;
- font-size: 25px;
-  padding: 10px 15px;
-}
-
-.navbar-link:hover {
-  color: #ddd;
-}
-
-
-.navbar {
-  background-color: cyan 300;
-  padding: 10px 30px;
-  width: 100%;
- 
-
- 
-}
-
-.navbar-list {
-  list-style: none;
-  display: flex;
-  margin-left: 500px;
-  justify-content: space-around;
-  margin-top: 10px;
-  font-weight: 400;
-  font-size: 20px;
-}
-
-
-.navbar-item {
-  margin: 0 10px;
-}
-
-.navbar-link {
-  color: white;
-  text-decoration: none;
-  
-  font-size: 1rem;
-}
-
-.navbar-link:hover {
-  color: white;
-  text-decoration: underline;
-}
-
-
-.btnresume{
+/* Resume Button Styling */
+.btnresume {
   background-color: rgba(64, 5, 106, 0.904);
-   border-radius: 10px;
-   font-family: cursive;
-   font-size: 30px;
+  border-radius: 10px;
+  font-family: cursive;
+  font-size: 20px;
+  padding: 10px 20px;
+  color: white;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
 }
 
+.btnresume:hover {
+  background-color: rgba(64, 5, 106, 1);  /* Darker purple on hover */
+}

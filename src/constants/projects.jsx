@@ -19,9 +19,9 @@ function projects() {
             transition={{duration:1}}
        className='w-full lg:w-1/4'>
             <img src={project.image}
-            width={150}
-            
-            height={150}
+            width={200}
+            border-radius
+            height={200}
              alt={project.title} 
              className='mb-6 rounded'/>
 
