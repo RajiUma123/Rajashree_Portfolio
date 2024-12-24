@@ -45,7 +45,7 @@ function mainsection() {
                 whileTap={{ scale: 0.95 }} // Zoom out effect on click
                 transition={{ duration: 0.3 }} // Smooth transition for scaling
                className='btnresume bg-purple-1000 hover:bg-purple-600 text-white py-2 px-4 rounded flex items-center justify-center space-x-2'>
-                <a href="/Rajashree_Portfolio/src/assets/Rajashree-NairResume.pdf">SEE MY RESUME</a></motion.button>
+                <a href="/Rajashree_Portfolio/public/assets/projects/Rajashree-NairResume.pdf">SEE MY RESUME</a></motion.button>
             </div>
           </div>
           <div className='w-full lg:w-1/2 lg:p-8'>
