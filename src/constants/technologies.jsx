@@ -2,7 +2,7 @@ import React from 'react'
 import { DiJava, DiMysql } from 'react-icons/di'
 import { FaAngular, FaBootstrap, FaCss3, FaHtml5, FaNodeJs } from 'react-icons/fa'
 import { RiReactjsLine } from 'react-icons/ri'
-import { SiAzuredevops, SiMongodb, SiTailwindcss } from 'react-icons/si'
+import { SiMongodb, SiTailwindcss } from 'react-icons/si'
 import { VscAzure } from 'react-icons/vsc'
 import {motion}  from 'framer-motion'
 
