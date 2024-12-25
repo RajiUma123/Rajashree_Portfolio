@@ -1,6 +1,7 @@
+import { defineConfig } from 'vite'
+import react from '@vitejs/plugin-react'
 
-
-export default {
-  base: '/Rajashree_Portfolio/', // This ensures that paths are correctly resolved during deployment
-};
-
+export default defineConfig({
+  plugins: [react()],
+  base: '/Rajashree_Portfolio/', // Use your exact repository name here
+})
